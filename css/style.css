@@ -1,0 +1,1155 @@
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#0d0d0d;
+    color:#fff;
+    overflow-x:hidden;
+}
+
+/* =========================
+   VARIABLES
+========================= */
+
+:root{
+
+    --orange:#ff7300;
+    --orange-dark:#e65c00;
+
+    --bg:#0d0d0d;
+    --card:#181818;
+
+    --white:#ffffff;
+    --gray:#bdbdbd;
+
+    --radius:25px;
+
+}
+
+/* =========================
+   APP
+========================= */
+
+.app{
+    display:flex;
+    min-height:100vh;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar{
+
+    width:280px;
+
+    position:fixed;
+
+    top:0;
+    left:0;
+    bottom:0;
+
+    overflow-y:auto;
+
+    background:linear-gradient(
+        180deg,
+        #ff7300,
+        #ff5500
+    );
+
+    padding:25px;
+
+    z-index:1000;
+
+}
+
+.logo-container{
+
+    display:flex;
+    justify-content:center;
+
+    margin-bottom:35px;
+
+}
+
+.logo{
+
+    width:180px;
+    max-width:100%;
+
+}
+
+/* =========================
+   MENU
+========================= */
+
+.sidebar-menu{
+
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+
+}
+
+.menu-item{
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    padding:14px;
+
+    border-radius:16px;
+
+    text-decoration:none;
+
+    color:#fff;
+
+    transition:.3s;
+
+}
+
+.menu-item:hover,
+.menu-item.active{
+
+    background:rgba(255,255,255,.15);
+
+}
+
+.menu-item i{
+
+    width:20px;
+    text-align:center;
+
+}
+
+/* =========================
+   REDES
+========================= */
+
+.sidebar-social{
+
+    margin-top:40px;
+
+}
+
+.sidebar-social h4{
+
+    margin-bottom:15px;
+
+}
+
+.social-icons{
+
+    display:flex;
+    gap:12px;
+
+}
+
+.social-icons a{
+
+    width:42px;
+    height:42px;
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-decoration:none;
+
+    color:#fff;
+
+    background:rgba(255,255,255,.15);
+
+    transition:.3s;
+
+}
+
+.social-icons a:hover{
+
+    transform:translateY(-3px);
+
+}
+
+/* =========================
+   CONTENIDO
+========================= */
+
+.content{
+
+    width:100%;
+
+    margin-left:280px;
+
+    padding:25px;
+
+}
+
+/* =========================
+   TOPBAR
+========================= */
+
+.topbar{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-bottom:25px;
+
+}
+
+.menu-btn{
+
+    background:none;
+    border:none;
+
+    color:#fff;
+
+    font-size:1.4rem;
+
+    cursor:pointer;
+
+}
+
+.live-badge{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    background:#1d1d1d;
+
+    padding:10px 18px;
+
+    border-radius:50px;
+
+}
+
+
+
+
+.live-dot{
+
+    width:10px;
+    height:10px;
+
+    border-radius:50%;
+
+    background:red;
+
+    animation:pulse 1s infinite;
+
+}
+
+@keyframes pulse{
+
+    0%{
+        opacity:1;
+    }
+
+    50%{
+        opacity:.3;
+    }
+
+    100%{
+        opacity:1;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+.hero{
+
+    position:relative;
+
+    width:100%;
+
+    height:620px;
+
+    margin:30px 0 45px;
+
+    overflow:hidden;
+
+    border-radius:28px;
+
+    background:#111;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.45);
+
+}
+
+
+
+
+
+
+
+
+/*=========================================
+    CONTENEDOR DE BANNERS
+=========================================*/
+
+.hero-slide{
+
+    position:absolute;
+
+    inset:0;
+
+    z-index:1;
+
+}
+
+/*=========================================
+    IMÁGENES DEL HERO
+=========================================*/
+
+.hero-image{
+
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    object-position:center;
+
+    opacity:0;
+
+    transition:
+        opacity .8s ease,
+        transform 8s linear;
+
+}
+
+.hero-image.active{
+
+    opacity:1;
+
+    transform:scale(1.04);
+
+}
+
+/*=========================================
+    CAPA OSCURA
+=========================================*/
+
+.hero-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    z-index:2;
+
+    background:
+    linear-gradient(
+        90deg,
+        rgba(0,0,0,.88) 0%,
+        rgba(0,0,0,.72) 45%,
+        rgba(0,0,0,.28) 100%
+    );
+
+}
+
+/*=========================================
+    CONTENIDO
+=========================================*/
+
+.hero-content{
+
+    position:absolute;
+
+    z-index:3;
+
+    top:50%;
+
+    left:6%;
+
+    transform:translateY(-50%);
+
+    width:min(92%,620px);
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+}
+
+/*=========================================
+    BADGE EN VIVO
+=========================================*/
+
+.hero-live{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:10px 20px;
+
+    border-radius:40px;
+
+    background:#ff2f2f;
+
+    color:#fff;
+
+    font-weight:700;
+
+    font-size:15px;
+
+    letter-spacing:.5px;
+
+    margin-bottom:24px;
+
+}
+
+/*=========================================
+    TÍTULO
+=========================================*/
+
+.hero-content h1{
+
+    font-size:clamp(42px,6vw,72px);
+
+    line-height:1;
+
+    color:#fff;
+
+    margin:0 0 12px;
+
+    font-weight:800;
+
+}
+
+/*=========================================
+    SUBTÍTULO
+=========================================*/
+
+.hero-content h2{
+
+    font-size:clamp(22px,3vw,44px);
+
+    color:#ff8300;
+
+    margin:0 0 24px;
+
+    font-weight:700;
+
+}
+
+/*=========================================
+    DESCRIPCIÓN
+=========================================*/
+
+.hero-content p{
+
+    width:100%;
+
+    max-width:540px;
+
+    font-size:clamp(16px,2vw,21px);
+
+    line-height:1.7;
+
+    color:rgba(255,255,255,.88);
+
+    margin-bottom:35px;
+
+}
+
+/*=========================================
+    BOTÓN
+=========================================*/
+
+.hero-btn{
+
+    padding:18px 34px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#ff8300;
+
+    color:#fff;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.30s;
+
+}
+
+.hero-btn:hover{
+
+    background:#ff9800;
+
+    transform:translateY(-3px);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.radio-player{
+
+    position:fixed;
+
+    left:50%;
+
+    bottom:20px;
+
+    transform:translateX(-50%);
+
+    width:760px;
+
+    max-width:calc(100% - 20px);
+
+    height:92px;
+
+    background:#1b1b1b;
+
+    border-radius:24px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    box-shadow:0 15px 45px rgba(0,0,0,.45);
+
+    z-index:9999;
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+
+
+
+
+
+/*=========================================
+    LOGO
+=========================================*/
+
+.player-logo{
+
+    width:64px;
+
+    height:64px;
+
+    border-radius:50%;
+
+    overflow:hidden;
+
+    flex-shrink:0;
+
+}
+
+.player-logo img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+
+
+
+
+
+/*=========================================
+    LADO IZQUIERDO
+=========================================*/
+
+
+
+
+.player-left{
+
+    flex:1;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    min-width:0;
+
+}
+
+
+
+
+
+
+
+/*=========================================
+    INFORMACIÓN
+=========================================*/
+
+.player-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    flex:1;
+
+    padding-left:18px;
+
+}
+
+
+
+
+
+.player-info{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    min-width:0;
+
+    overflow:hidden;
+
+    padding-right:10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.player-live{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    margin-bottom:4px;
+
+    font-size:11px;
+
+    font-weight:700;
+
+    color:#ff8c00;
+
+    text-transform:uppercase;
+
+}
+
+.player-live i{
+
+    color:#ff3b30;
+
+       font-size:10px;
+
+}
+
+
+
+.player-info h3{
+
+    margin:0;
+
+    color:#fff;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    line-height:1.1;
+
+}
+
+
+
+
+
+.player-info p{
+
+    margin:2px 0 0;
+
+    color:#9f9f9f;
+
+    font-size:11px;
+
+}
+
+
+
+
+
+
+
+
+
+
+/*=========================================
+    CENTRO DEL PLAYER
+=========================================*/
+
+.player-center{
+
+    flex:0 0 80px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+/*=========================================
+    LADO DERECHO
+=========================================*/
+
+.player-right{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    align-items:center;
+
+}
+
+
+/*=========================================
+    BOTÓN PLAY
+=========================================*/
+
+.play-btn{
+
+    width:60px;
+
+    height:60px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#ff7300;
+
+    color:#fff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    cursor:pointer;
+
+    font-size:22px;
+
+    transition:.25s ease;
+
+    box-shadow:0 8px 20px rgba(255,115,0,.35);
+
+}
+
+.play-btn:hover{
+
+    transform:scale(1.05);
+
+}
+
+.play-btn i{
+
+    margin-left:3px;
+
+}
+
+
+
+
+
+
+
+
+/*=========================================
+    MENÚ SUPERIOR ESCRITORIO
+=========================================*/
+
+.desktop-topbar{
+
+    display:none;
+
+}
+
+@media (min-width:1025px){
+
+    .desktop-topbar{
+
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        gap:45px;
+
+        height:60px;
+        width:100%;
+
+        margin:18px 0 28px;
+
+        background:transparent;
+
+        border-bottom:1px solid rgba(255,255,255,.08);
+
+    }
+
+    .desktop-topbar a{
+
+        color:#ffffff;
+        text-decoration:none;
+        font-size:15px;
+        font-weight:600;
+        position:relative;
+        padding:8px 0;
+        transition:.25s;
+
+    }
+
+    .desktop-topbar a::after{
+
+        content:"";
+        position:absolute;
+        left:0;
+        bottom:-6px;
+
+        width:0;
+        height:2px;
+
+        background:#ff7300;
+
+        transition:.25s;
+
+    }
+
+    .desktop-topbar a:hover{
+
+        color:#ff7300;
+
+    }
+
+    .desktop-topbar a:hover::after{
+
+        width:100%;
+
+    }
+
+
+
+
+
+
+
+/*=========================================
+    ADMIN MODAL
+=========================================*/
+
+.admin-modal{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.75);
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:99999;
+
+}
+
+/*=========================================
+    LOGIN BOX
+=========================================*/
+
+.admin-login{
+
+    width:100%;
+
+    max-width:420px;
+
+    background:#181818;
+
+    border-radius:22px;
+
+    padding:40px;
+
+    border:1px solid rgba(255,115,0,.25);
+
+    box-shadow:0 20px 60px rgba(0,0,0,.55);
+
+    position:relative;
+
+}
+
+/*=========================================
+    TITULO
+=========================================*/
+
+.admin-login h2{
+
+    text-align:center;
+
+    color:#fff;
+
+    margin-bottom:25px;
+
+}
+
+/*=========================================
+    INPUTS
+=========================================*/
+
+.admin-login input{
+
+    width:100%;
+
+    height:50px;
+
+    margin-bottom:15px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:12px;
+
+    background:#262626;
+
+    color:#fff;
+
+    padding:0 16px;
+
+    font-size:15px;
+
+}
+
+/*=========================================
+    BOTON
+=========================================*/
+.admin-login #adminLogin{
+
+    width:100%;
+
+    height:50px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#ff7300;
+
+    color:#fff;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.admin-login #adminLogin:hover{
+
+    background:#ff8b1f;
+
+}
+
+/*=========================================
+    BOTON CERRAR
+=========================================*/
+.close-admin{
+
+    position:absolute;
+
+    top:12px;
+
+    right:12px;
+
+    width:36px;
+
+    height:36px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:50%;
+
+    background:#2b2b2b;
+
+    color:#fff;
+
+    font-size:24px;
+
+    font-weight:bold;
+
+    line-height:1;
+
+    cursor:pointer;
+
+    z-index:1000;
+
+}
+
+
+
+
+
+
+
+
+/*=========================================
+    HERO INFO (HORA · CLIMA · CIUDAD)
+=========================================*/
+
+.hero-info{
+
+    position:absolute;
+
+    left:65px;
+
+    bottom:35px;
+
+    z-index:5;
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:6px;
+
+    width:max-content;
+
+    padding:4px 8px;
+
+    background:rgba(0,0,0,.90);
+
+    border-radius:20px;
+
+    color:#ff7a00;
+
+    font-size:10px;
+
+    font-weight:700;
+
+    letter-spacing:.2px;
+
+    white-space:nowrap;
+
+}
+
+.hero-info span{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:4px;
+
+}

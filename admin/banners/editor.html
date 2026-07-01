@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nuevo Banner | La Tóxica Radio</title>
+
+<link rel="stylesheet" href="../css/banner-editor.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>Panel Administrativo</h1>
+
+</header>
+
+<main>
+
+    <div class="page-header">
+
+        <h2>Nuevo Banner</h2>
+
+        <a href="index.html" class="btn-volver">
+            ← Regresar
+        </a>
+
+    </div>
+
+    <div class="editor-card">
+
+        <form id="bannerForm">
+
+            <label>Título</label>
+
+            <input
+                type="text"
+                id="titulo"
+                placeholder="Título del banner">
+
+            <label>Descripción</label>
+
+            <textarea
+                id="descripcion"
+                rows="5"
+                placeholder="Descripción del banner"></textarea>
+
+            
+
+
+<label>Imagen para Escritorio</label>
+
+<input
+    type="file"
+    id="imagen">
+
+<label>Imagen para Móvil (1080 × 600)</label>
+
+<input
+    type="file"
+    id="imagenMobile">
+
+
+
+
+
+
+
+
+
+
+            <label>Enlace</label>
+
+            <input
+                type="text"
+                id="enlace"
+                placeholder="https://">
+
+            <label class="check">
+
+                <input
+                    type="checkbox"
+                    id="activo"
+                    checked>
+
+                Banner activo
+
+            </label>
+
+            <div class="acciones">
+
+                <button type="submit">
+
+                    Guardar
+
+                </button>
+
+                <a href="index.html" class="cancelar">
+
+                    Cancelar
+
+                </a>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</main>
+
+<script src="../js/banner-editor.js"></script>
+
+</body>
+
+</html>

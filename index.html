@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>La Tóxica FM</title>
+
+    <meta name="theme-color"
+          content="#ff7300">
+
+    <!-- PWA -->
+
+    <link rel="manifest"
+          href="manifest/manifest.json">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <link rel="stylesheet"
+          href="css/responsive.css">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- =========================
+             SIDEBAR
+        ========================= -->
+
+        <aside class="sidebar">
+
+            <div class="logo-container">
+
+    <h1 class="logo-text">LA TÓXICA FM</h1>
+
+</div>
+
+            <nav class="sidebar-menu">
+
+                <a href="#"
+                   class="menu-item active">
+
+                    <i class="fa-regular fa-newspaper"></i>
+
+                    <span>Noticias</span>
+
+                </a>
+
+                <a href="#"
+                   class="menu-item">
+
+                    <i class="fa-solid fa-microphone"></i>
+
+                    <span>Entrevistas</span>
+
+                </a>
+
+                <a href="#"
+                   class="menu-item">
+
+                    <i class="fa-solid fa-gift"></i>
+
+                    <span>Promociones</span>
+
+                </a>
+
+                <a href="#"
+                   class="menu-item">
+
+                    <i class="fa-solid fa-trophy"></i>
+
+                    <span>Gana con La Tóxica</span>
+
+                </a>
+
+                <a href="#"
+                   class="menu-item">
+
+                    <i class="fa-solid fa-headphones"></i>
+
+                    <span>Podcast</span>
+
+                </a>
+
+                <a href="#"
+                   class="menu-item">
+
+                    <i class="fa-solid fa-radio"></i>
+
+                    <span>Episodios</span>
+
+                </a>
+
+                <a href="#"
+                   class="menu-item">
+
+                    <i class="fa-regular fa-calendar"></i>
+
+                    <span>Eventos</span>
+
+                </a>
+
+                <a href="#"
+                   class="menu-item">
+
+                    <i class="fa-solid fa-chart-column"></i>
+
+                    <span>Top 10</span>
+
+                </a>
+
+                <a href="#"
+                   class="menu-item">
+
+                    <i class="fa-solid fa-scale-balanced"></i>
+
+                    <span>Legal</span>
+
+                </a>
+
+                <a href="#"
+                   class="menu-item">
+
+                    <i class="fa-solid fa-bullhorn"></i>
+
+                    <span>Publicidad y Negocios</span>
+
+                </a>
+
+            </nav>
+
+            <div class="sidebar-social">
+
+                <h4>Síguenos</h4>
+
+                <div class="social-icons">
+
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+        <!-- =========================
+             CONTENIDO
+        ========================= -->
+
+        <main class="content">
+
+            <!-- TOPBAR -->
+
+            <header class="topbar">
+
+                <button id="menuBtn"
+                        class="menu-btn">
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </button>
+
+                <div class="live-badge">
+
+                    <span class="live-dot"></span>
+
+                    EN VIVO
+
+                </div>
+
+            </header>
+
+
+
+
+
+
+
+<!-- =========================================
+     TOP BAR (SOLO ESCRITORIO)
+========================================= -->
+
+<nav class="desktop-topbar">
+
+    <a href="#">Noticias</a>
+
+    <a href="#">Entrevistas</a>
+
+    <a href="#">Programas</a>
+
+    <a href="#">Contacto</a>
+
+    <a href="#">Publicidad</a>
+
+    <a href="#">Podcast</a>
+
+    <a href="#">Top 10</a>
+
+   <a href="#" id="adminBtn">Acceder</a>
+
+</nav>
+
+
+
+
+
+
+
+<!-- =========================================
+     HERO PRINCIPAL
+========================================= -->
+
+<section class="hero">
+
+    <!-- Banner dinámico -->
+    <div
+        id="heroSlide"
+        class="hero-slide">
+
+        Cargando banners...
+
+    </div>
+
+    <!-- Capa oscura -->
+    <div class="hero-overlay"></div>
+
+
+
+
+
+
+
+<div class="hero-content">
+
+    <span class="hero-live">
+        ● EN VIVO
+    </span>
+
+    <h1>LA TÓXICA FM</h1>
+
+    <h2>LA QUE MANDA.</h2>
+
+    <p>
+        La mejor música, promociones, locutores y el mejor ambiente las 24 horas del día.
+    </p>
+
+    <button class="hero-btn">
+
+        <i class="fa-solid fa-play"></i>
+
+        ESCUCHAR AHORA
+
+    </button>
+
+</div>
+
+<div class="hero-info">
+
+    <span id="heroHora">🕒 --:--</span>
+
+    <span id="heroClima">🌤 --°C</span>
+
+   <span id="heroCiudad">📍 Comitán de Domínguez, Chiapas, Méx.</span>
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- ==========================
+     REPRODUCTOR MAX STYLE
+========================== -->
+
+<section class="radio-player" id="radioPlayer">
+
+    <!-- IZQUIERDA -->
+    <div class="player-left">
+
+    <div class="player-logo">
+
+        <img src="assets/icons/icon-192.png"
+             alt="La Tóxica FM"
+             id="radioLogo">
+
+
+
+    </div>
+
+    <div class="player-info">
+
+        <span class="player-live">
+
+            <i class="fa-solid fa-circle"></i>
+
+            EN VIVO
+
+        </span>
+
+        <h3 id="artistName">
+
+            La Tóxica FM
+
+        </h3>
+
+        <p id="songTitle">
+
+            Reproduciendo ahora...
+
+        </p>
+
+    </div>
+
+</div>
+
+
+
+    
+
+    <!-- CENTRO -->
+   
+
+    <div class="player-center">
+
+    <button id="playBtn" class="play-btn">
+
+        <i class="fa-solid fa-play"></i>
+
+    </button>
+
+</div>
+
+
+
+
+
+
+
+
+        
+
+    </div>
+
+    <!-- DERECHA -->
+    <div class="player-right">
+
+    </div>
+
+</secti
+
+
+
+
+
+
+<!-- STREAM -->
+<audio id="radio"></audio>
+
+<!-- JS -->
+<script src="js/menu.js"></script>
+<script src="js/player.js"></script>
+<script src="js/app.js"></script>
+<script src="js/admin-modal.js"></script>
+
+
+
+
+
+
+
+
+<!-- =====================================
+     MODAL LOGIN ADMIN
+===================================== -->
+
+<div class="admin-modal" id="adminModal">
+
+    <div class="admin-login">
+
+        <button id="closeAdmin" class="close-admin">
+            ✕
+        </button>
+
+        <h2>Acceso Administrativo</h2>
+
+        <input
+            type="text"
+            id="adminUser"
+            placeholder="Usuario">
+
+        <input
+            type="password"
+            id="adminPass"
+            placeholder="Contraseña">
+
+        <button id="adminLogin">
+
+            Ingresar
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1782882261236,
+        "titulo": "banner chavos",
+        "descripcion": "",
+        "enlace": "",
+        "activo": true,
+        "imagen": "1782882259426-DiseÃ±o_sin_tÃ­tulo_(23).png",
+        "imagenMobile": "",
+        "orden": 2
+    },
+    {
+        "id": 1782882316688,
+        "titulo": "banner mujer",
+        "descripcion": "",
+        "enlace": "",
+        "activo": true,
+        "imagen": "1782882344197-DiseÃ±o_sin_tÃ­tulo_(22).png",
+        "imagenMobile": "1782882316685-DiseÃ±o_sin_tÃ­tulo_(22).png",
+        "orden": 2
+    },
+    {
+        "id": 1782882504574,
+        "titulo": "banner hombre",
+        "descripcion": "banner web ",
+        "enlace": "",
+        "activo": true,
+        "imagen": "1782882504572-DiseÃ±o_sin_tÃ­tulo_(21).png",
+        "imagenMobile": "",
+        "orden": 4
+    },
+    {
+        "id": 1782892366497,
+        "titulo": "logo general",
+        "descripcion": "banner nuevo",
+        "enlace": "google.com",
+        "activo": true,
+        "imagen": "1782892366429-ChatGPT_Image_29_jun_2026,_02_25_51_a.m..png",
+        "imagenMobile": "",
+        "orden": 5
+    },
+    {
+        "id": 1782892465276,
+        "titulo": "banner mujer guapa",
+        "descripcion": "banner indirecto",
+        "enlace": "google.com",
+        "activo": true,
+        "imagen": "1782892465200-DiseÃ±o_sin_tÃ­tulo_(14).png",
+        "imagenMobile": "",
+        "orden": 5
+    }
+]

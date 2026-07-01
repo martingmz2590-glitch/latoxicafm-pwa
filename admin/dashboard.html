@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Panel Administrativo | La Tóxica FM</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+
+background:#0d0d0d;
+color:#fff;
+
+}
+
+header{
+
+background:#171717;
+
+padding:20px 40px;
+
+border-bottom:2px solid #ff7a00;
+
+}
+
+header h1{
+
+color:#ff7a00;
+
+font-size:28px;
+
+}
+
+main{
+
+max-width:1200px;
+
+margin:auto;
+
+padding:40px 20px;
+
+}
+
+.grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:25px;
+
+}
+
+.card-link{
+
+text-decoration:none;
+
+}
+
+.card{
+
+background:#171717;
+
+border:1px solid #2b2b2b;
+
+border-radius:18px;
+
+padding:30px;
+
+transition:.25s;
+
+cursor:pointer;
+
+min-height:170px;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+}
+
+.card:hover{
+
+transform:translateY(-6px);
+
+border-color:#ff7a00;
+
+box-shadow:0 0 18px rgba(255,122,0,.30);
+
+}
+
+.icono{
+
+font-size:42px;
+
+margin-bottom:15px;
+
+}
+
+.card h2{
+
+color:#ff7a00;
+
+margin-bottom:10px;
+
+}
+
+.card p{
+
+color:#ccc;
+
+line-height:1.5;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Panel Administrativo</h1>
+
+</header>
+
+<main>
+
+<div class="grid">
+
+<a href="banners/index.html" class="card-link">
+
+<div class="card">
+
+<div class="icono">🖼️</div>
+
+<h2>Banners</h2>
+
+<p>Administrar el Hero principal de la PWA.</p>
+
+</div>
+
+</a>
+
+<a href="top/index.html" class="card-link">
+
+<div class="card">
+
+<div class="icono">🔥</div>
+
+<h2>Las Más Tóxicas</h2>
+
+<p>Administrar el Top semanal de canciones.</p>
+
+</div>
+
+</a>
+
+<div class="card">
+
+<div class="icono">📰</div>
+
+<h2>Noticias</h2>
+
+<p>Próximamente.</p>
+
+</div>
+
+<div class="card">
+
+<div class="icono">📻</div>
+
+<h2>Programación</h2>
+
+<p>Próximamente.</p>
+
+</div>
+
+</div>
+
+</main>
+
+</body>
+
+</html>

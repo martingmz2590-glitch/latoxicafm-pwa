@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1782897813392,
+        "posicion": 1,
+        "titulo": "reyes",
+        "artista": "julion alvarez",
+        "youtube": "https://youtu.be/ElRVZ09939k",
+        "activo": true
+    },
+    {
+        "id": 1782897828559,
+        "posicion": 1,
+        "titulo": "banner hombre",
+        "artista": "julion alvarez",
+        "youtube": "https://youtu.be/ElRVZ09939k",
+        "activo": true
+    },
+    {
+        "id": 1782898148641,
+        "posicion": 1,
+        "titulo": "banner movil",
+        "artista": "julion alvarez",
+        "youtube": "https://youtu.be/ElRVZ09939k",
+        "activo": true
+    },
+    {
+        "id": 1782898303262,
+        "posicion": 1,
+        "titulo": "banner hombre",
+        "artista": "julion alvarez",
+        "youtube": "https://youtu.be/ElRVZ09939k",
+        "activo": true
+    }
+]

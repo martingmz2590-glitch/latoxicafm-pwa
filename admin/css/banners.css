@@ -1,0 +1,307 @@
+/* =====================================================
+   RESET
+===================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* =====================================================
+   BODY
+===================================================== */
+
+body{
+    background:#0d0d0d;
+    color:#ffffff;
+}
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+header{
+    background:#171717;
+    border-bottom:2px solid #ff7a00;
+    padding:20px 40px;
+}
+
+header h1{
+    color:#ff7a00;
+    font-size:32px;
+}
+
+/* =====================================================
+   CONTENIDO
+===================================================== */
+
+main{
+    max-width:1400px;
+    margin:40px auto;
+    padding:0 30px;
+}
+
+/* =====================================================
+   CABECERA
+===================================================== */
+
+.page-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:35px;
+}
+
+.page-header h2{
+    font-size:46px;
+    font-weight:bold;
+}
+
+/* =====================================================
+   BOTÓN NUEVO
+===================================================== */
+
+#nuevoBanner{
+
+    background:#ff7a00;
+    color:#ffffff;
+    border:none;
+    border-radius:8px;
+
+    padding:15px 28px;
+
+    font-size:17px;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+#nuevoBanner:hover{
+
+    background:#ff952b;
+
+}
+
+/* =====================================================
+   TABLA
+===================================================== */
+
+.table-container{
+
+    background:#171717;
+
+    border:1px solid #2f2f2f;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+}
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+thead{
+
+    background:#222222;
+
+}
+
+thead th{
+
+    padding:18px;
+
+    color:#ff7a00;
+
+    font-size:15px;
+
+    text-align:left;
+
+    border-bottom:1px solid #333;
+
+}
+
+tbody td{
+
+    padding:18px;
+
+    border-bottom:1px solid #262626;
+
+    vertical-align:middle;
+
+}
+
+tbody tr{
+
+    transition:.20s;
+
+}
+
+tbody tr:hover{
+
+    background:#1d1d1d;
+
+}
+
+/* =====================================================
+   MENSAJE SIN REGISTROS
+===================================================== */
+
+.sin-registros{
+
+    text-align:center;
+
+    color:#999999;
+
+    font-size:18px;
+
+    padding:70px 20px;
+
+}
+
+/* =====================================================
+   MINIATURA
+===================================================== */
+
+.banner-thumb{
+
+    width:120px;
+
+    height:70px;
+
+    background:#2a2a2a;
+
+    border-radius:8px;
+
+    object-fit:cover;
+
+}
+
+/* =====================================================
+   ESTADOS
+===================================================== */
+
+.estado{
+
+    display:inline-block;
+
+    padding:6px 14px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    font-weight:bold;
+
+}
+
+.estado.activo{
+
+    background:#2b8f3d;
+
+    color:white;
+
+}
+
+.estado.inactivo{
+
+    background:#7b2626;
+
+    color:white;
+
+}
+
+/* =====================================================
+   BOTONES DE ACCIÓN
+===================================================== */
+
+.acciones{
+
+    display:flex;
+
+    gap:10px;
+
+}
+
+.btn-editar,
+.btn-eliminar{
+
+    border:none;
+
+    border-radius:6px;
+
+    padding:10px 15px;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:14px;
+
+    transition:.25s;
+
+}
+
+.btn-editar{
+
+    background:#ff7a00;
+
+}
+
+.btn-editar:hover{
+
+    background:#ff9431;
+
+}
+
+.btn-eliminar{
+
+    background:#b32727;
+
+}
+
+.btn-eliminar:hover{
+
+    background:#d63838;
+
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:900px){
+
+    .page-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:20px;
+
+    }
+
+    .table-container{
+
+        overflow-x:auto;
+
+    }
+
+    table{
+
+        min-width:900px;
+
+    }
+
+}
